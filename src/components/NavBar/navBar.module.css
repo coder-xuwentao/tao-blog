@@ -25,15 +25,10 @@
 }
 
 .nav_links a {
-  text-decoration: none;
-  transition: color 0.15s ease;
-  font-size: 14px;
-  border-radius: 2px;
-  color: var(--txt-b-pure);
-  position: relative;
 }
 
 .nav_link_title {
   font-size: 16px;
   white-space: nowrap;
+  color: var(--txt-ink-pure);
 }

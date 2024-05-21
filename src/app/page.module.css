@@ -28,3 +28,54 @@
     opacity: 1;
   }
 }
+
+.bg_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0;
+  position: relative;
+}
+
+.bg_content .title {
+  width: 460px;
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5); /* 添加黑色阴影 */
+  font-family: '阿里妈妈东方大楷 Regular', serif;
+  color: var(--txt-w-pure);
+  margin-bottom: 5px;
+}
+
+.bg_content .author {
+  width: 460px;
+  line-height: 1.3;
+  color: var(--txt-w-pure);
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5); /* 添加黑色阴影 */
+  font-family: '楷体', '华文楷体';
+  text-align: center;
+  white-space: pre-line;
+  margin-bottom: 30px;
+}
+
+.bg_content .description_box {
+  display: flex;
+  justify-content: center;
+}
+
+.description_box .description {
+  width: 460px;
+  line-height: 1.3;
+  color: var(--txt-w-pure);
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5); /* 添加黑色阴影 */
+  font-family: '楷体', '华文楷体';
+  text-align: left;
+  white-space: pre-line;
+}
