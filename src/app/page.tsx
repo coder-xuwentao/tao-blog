@@ -18,10 +18,10 @@ export default function Home() {
       ],
       typeSpeed: 60,
       backSpeed: 0,
-      loop: false,
+      loop: true,
       loopCount: Infinity,
       autoInsertCss: false,
-      backDelay: 2000,
+      backDelay: 60000,
       showCursor: false,
     });
 

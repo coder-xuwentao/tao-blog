@@ -1,6 +1,6 @@
 :root {
-  --ct-body-font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei',
-    'Microsoft Jhenghei', sans-serif;
+  --ct-body-font-family: '楷体', '华文楷体', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft Yahei', 'Microsoft Jhenghei', sans-serif;
   --ct-theme: linear-gradient(rgb(57, 89, 138), rgb(121, 215, 237));
   --ct-theme-border: 2px solid rgb(255, 255, 255);
   --w-alpha-0: rgba(255, 255, 255, 0);

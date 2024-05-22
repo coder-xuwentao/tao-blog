@@ -28,7 +28,8 @@
 }
 
 .nav_link_title {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
   white-space: nowrap;
   color: var(--txt-ink-pure);
 }
