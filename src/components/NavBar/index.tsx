@@ -4,11 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './navBar.module.css';
 import { navList } from './routes';
+import useScrollStyle from './use-scroll-style';
 
 export default function Navbar() {
+  useScrollStyle();
+
   const navItem = (obj) => {
     return (
-      <Link key={obj?.key} href={obj?.href}>
+      <Link key={obj?.key} href={obj?.href} className={styles.nav_link}>
         {/* todo item icon */}
         <span className={styles.nav_link_title}>{obj?.title}</span>
       </Link>

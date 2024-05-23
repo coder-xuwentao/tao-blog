@@ -19,17 +19,34 @@
 }
 
 .nav_links {
-  gap: 24px;
+  gap: 10px;
   display: flex;
   align-items: center;
 }
 
-.nav_links a {
+.nav_link {
+  margin: 0 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* 当前选中导航的样式 */
+.nav_link_active {
+  background-color: var(--b-alpha-5);
+  border-radius: 5px;
+}
+
+.nav_link:hover {
+  background-color: var(--b-alpha-5);
+  border-radius: 5px;
+  color: var(--txt-w-pure);
 }
 
 .nav_link_title {
   font-size: 18px;
   font-weight: 400;
+  font-family: var(--ct-kai-font-family);
   white-space: nowrap;
   color: var(--txt-ink-pure);
 }

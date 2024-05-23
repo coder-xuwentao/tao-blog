@@ -1,10 +1,16 @@
 'use client';
 
+import BookImg from '@public/images/book.jpg';
+import LandscapeImg from '@public/images/landscape_painting.jpg';
 import bgImgLight from '@public/images/main-background.jpg';
+import Link from 'next/Link';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import styles from './page.module.css';
+import styles from '../styles/page.module.css';
+
+const BlurBookImg = 'LXKUcia#ICRj~Xoet7xu^+axIUWB';
+const BlurLandscapeImg = 'LPF#~@M{01-:~pae9Zt7M{ofWXM{';
 
 export default function Home() {
   const typeTarget = useRef<any>(null);
@@ -55,6 +61,37 @@ export default function Home() {
         {/* 箭头 */}
         {/* <div className={styles.arrow}>
         </div> */}
+      </div>
+
+      <div className={styles.page_box}>
+        <div className={styles.page_list}>
+          <div className={styles.page_item}>
+            <Image
+              className={styles.page_item_bg}
+              src={BookImg}
+              alt="文章"
+              placeholder="blur"
+              blurDataURL={BlurBookImg}
+              priority={true}
+            />
+            <Link className={styles.page_item_link} href="/blog">
+              <span>文 章</span>
+            </Link>
+          </div>
+          <div className={styles.page_item}>
+            <Image
+              className={styles.page_item_bg}
+              src={LandscapeImg}
+              alt="摄影"
+              placeholder="blur"
+              blurDataURL={BlurLandscapeImg}
+              priority={true}
+            />
+            <Link className={styles.page_item_link} href="/photography">
+              <span>摄 影</span>
+            </Link>
+          </div>
+        </div>
       </div>
     </main>
   );
