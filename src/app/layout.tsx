@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import Footer from '@components/Footer';
 import NavBar from '@components/NavBar';
 import type { Metadata } from 'next';
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body>
-        <NavBar />
-        {children}
-        <Footer />
+        <AntdRegistry>
+          <NavBar />
+          {children}
+          <Footer />
+        </AntdRegistry>
       </body>
     </html>
   );
